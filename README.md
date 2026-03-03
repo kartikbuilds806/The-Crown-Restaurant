@@ -1,20 +1,55 @@
-<div align="center">
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-</div>
+# ♛ The Crown Restaurant
 
-# Run and deploy your AI Studio app
+**Premium fast food and family dining in Laksar, Haridwar.**
 
-This contains everything you need to run your app locally.
+A fully static website for The Crown Restaurant — featuring a live menu, add-to-cart system, WhatsApp ordering integration, checkout flow, and home delivery booking.
 
-View your app in AI Studio: https://ai.studio/apps/9d469e5e-0dc0-46c6-85fe-e5b1611f9f5e
+---
 
-## Run Locally
+## 🌐 Live Site
 
-**Prerequisites:**  Node.js
+Deployed on Netlify → [View Live Site](https://thecrown-restaurant.netlify.app)
 
+---
 
-1. Install dependencies:
-   `npm install`
-2. Set the `GEMINI_API_KEY` in [.env.local](.env.local) to your Gemini API key
-3. Run the app:
-   `npm run dev`
+## 📁 Project Structure
+
+```
+The Crown Restaurant/
+├── index.html      # Main website (single-page)
+├── styles.css      # All styles
+├── script.js       # Cart, checkout, WhatsApp integration
+└── netlify.toml    # Netlify deployment config
+```
+
+---
+
+## 🚀 Run Locally
+
+No build step required — it's a pure static site.
+
+Just open `index.html` in your browser, or use a local server:
+
+```bash
+npx serve .
+```
+
+---
+
+## ✨ Features
+
+- 🛒 **Add to Cart** — with quantity controls
+- 📋 **Checkout Form** — name, phone, delivery address, payment method
+- 💬 **WhatsApp Integration** — order confirmation sent via WhatsApp
+- 📍 **Google Maps** — embedded location for the restaurant
+- 📱 **Fully Responsive** — works on mobile and desktop
+- 🕐 **Live Status Badge** — shows open/closed based on business hours
+
+---
+
+## 📞 Contact
+
+- **Phone:** [9718922645](tel:09718922645)
+- **WhatsApp:** [wa.me/919718922645](https://wa.me/919718922645)
+- **Address:** Balawali Tiraha, Laksar, Haridwar – 247663, Uttarakhand
+- **Hours:** Mon–Sun, 11:00 AM – 9:30 PM

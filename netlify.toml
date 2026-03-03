@@ -1,7 +1,12 @@
 [build]
-  # No build command — serve the static HTML/CSS/JS directly
+  # Pure static site – no build step needed
   command = ""
   publish = "."
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
 
 [[headers]]
   for = "/*"
