@@ -1,12 +1,6 @@
 [build]
-  # Pure static site – no build step needed
-  command = ""
-  publish = "."
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
+  command = "npm run build"
+  publish = "dist"
 
 [[headers]]
   for = "/*"
@@ -14,3 +8,8 @@
     X-Frame-Options = "DENY"
     X-Content-Type-Options = "nosniff"
     Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
