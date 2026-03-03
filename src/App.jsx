@@ -103,6 +103,27 @@ export default function App() {
     // ── Category filter ────────────────────────────────────────────
     const [activeCategory, setActiveCategory] = useState('all');
 
+    // ── Global scroll reveal ───────────────────────────────────────
+    // Re-runs on mount + whenever category changes (new MenuCards rendered)
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            const obs = new IntersectionObserver(
+                (entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('visible');
+                            obs.unobserve(entry.target);
+                        }
+                    });
+                },
+                { threshold: 0.07, rootMargin: '0px 0px -20px 0px' }
+            );
+            document.querySelectorAll('.reveal-on-scroll:not(.visible)').forEach(el => obs.observe(el));
+            return () => obs.disconnect();
+        }, 120);
+        return () => clearTimeout(timer);
+    }, [activeCategory]);
+
     // Prevent body scroll when overlays open
     useEffect(() => {
         document.body.style.overflow = (isCartOpen || isCheckoutOpen || isSuccessOpen) ? 'hidden' : '';

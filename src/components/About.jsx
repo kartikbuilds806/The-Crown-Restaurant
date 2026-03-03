@@ -1,24 +1,9 @@
-import { useEffect, useRef } from 'react';
-
 export default function About() {
-    const refs = useRef([]);
-
-    useEffect(() => {
-        const obs = new IntersectionObserver(
-            (entries) => entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } }),
-            { threshold: 0.12, rootMargin: '0px 0px -40px 0px' }
-        );
-        refs.current.forEach(el => el && obs.observe(el));
-        return () => obs.disconnect();
-    }, []);
-
-    const addRef = (el) => { if (el && !refs.current.includes(el)) refs.current.push(el); };
-
     return (
         <section className="about" id="about">
             <div className="container">
                 <div className="about-grid">
-                    <div className="about-image-wrap reveal" ref={addRef}>
+                    <div className="about-image-wrap reveal-on-scroll">
                         <div className="about-img-frame">
                             <img
                                 src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=600&q=80"
@@ -32,7 +17,7 @@ export default function About() {
                             </div>
                         </div>
                     </div>
-                    <div className="about-content reveal" ref={addRef}>
+                    <div className="about-content reveal-on-scroll">
                         <div className="section-tag">Our Story</div>
                         <h2 className="section-title">A Royal Dining<br /><span className="gold-text">Experience</span></h2>
                         <p className="about-text">
