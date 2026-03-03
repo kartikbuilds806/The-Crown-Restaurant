@@ -60,7 +60,7 @@ export const menuItems = [
         name: 'Butter Naan',
         price: 40,
         category: 'main',
-        image: 'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=400&q=80',
+        image: '/butter_naan.png',
         description: 'Soft, buttery leavened flatbread from the tandoor.',
         isVeg: true,
     },
