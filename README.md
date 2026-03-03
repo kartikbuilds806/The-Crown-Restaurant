@@ -36,20 +36,4 @@ npx serve .
 
 ---
 
-## ✨ Features
 
-- 🛒 **Add to Cart** — with quantity controls
-- 📋 **Checkout Form** — name, phone, delivery address, payment method
-- 💬 **WhatsApp Integration** — order confirmation sent via WhatsApp
-- 📍 **Google Maps** — embedded location for the restaurant
-- 📱 **Fully Responsive** — works on mobile and desktop
-- 🕐 **Live Status Badge** — shows open/closed based on business hours
-
----
-
-## 📞 Contact
-
-- **Phone:** [9718922645](tel:09718922645)
-- **WhatsApp:** [wa.me/919718922645](https://wa.me/919718922645)
-- **Address:** Balawali Tiraha, Laksar, Haridwar – 247663, Uttarakhand
-- **Hours:** Mon–Sun, 11:00 AM – 9:30 PM
