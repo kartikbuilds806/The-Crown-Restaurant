@@ -1188,11 +1188,13 @@ img {
     right: 0;
     width: 380px;
     height: 100vh;
+    height: 100dvh;
     background: var(--maroon-deep);
     border-left: 1px solid rgba(201, 168, 76, 0.2);
     z-index: 1101;
     display: flex;
     flex-direction: column;
+    overflow: hidden;
     transform: translateX(100%);
     transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     box-shadow: -8px 0 40px rgba(0, 0, 0, 0.5);
@@ -1236,9 +1238,11 @@ img {
 }
 
 .cart-items {
-    flex: 1;
+    flex: 1 1 0;
     overflow-y: auto;
+    overflow-x: hidden;
     padding: 16px;
+    min-height: 0;
 }
 
 .cart-empty {
@@ -1339,9 +1343,11 @@ img {
 
 .cart-footer {
     padding: 20px;
+    padding-bottom: max(20px, env(safe-area-inset-bottom));
     border-top: 1px solid rgba(201, 168, 76, 0.15);
     background: rgba(0, 0, 0, 0.2);
     flex-shrink: 0;
+    flex-grow: 0;
 }
 
 .cart-sub {
