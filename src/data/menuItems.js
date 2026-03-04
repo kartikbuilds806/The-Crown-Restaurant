@@ -8,6 +8,7 @@ export const menuItems = [
         image: '/veg_spring_rolls.png',
         description: 'Crispy rolls stuffed with fresh vegetables.',
         isVeg: true,
+        portionType: null,
     },
     {
         id: 'paneer_tikka',
@@ -17,6 +18,7 @@ export const menuItems = [
         image: '/paneer_tikka.png',
         description: 'Marinated cottage cheese grilled to perfection.',
         isVeg: true,
+        portionType: null,
     },
     {
         id: 'crispy_corn',
@@ -26,6 +28,7 @@ export const menuItems = [
         image: 'https://images.unsplash.com/photo-1612929633738-8fe44f7ec841?w=400&q=80',
         description: 'Golden fried crunchy corn with spices.',
         isVeg: true,
+        portionType: null,
     },
     // ─── MAIN COURSE ────────────────────────────────────────────────────────────
     {
@@ -36,6 +39,12 @@ export const menuItems = [
         image: '/shahi_paneer.png',
         description: 'Creamy rich tomato gravy with soft paneer cubes.',
         isVeg: true,
+        portionType: 'portionSize',
+        portions: [
+            { label: 'Quarter', multiplier: 0.5 },
+            { label: 'Half', multiplier: 0.75 },
+            { label: 'Full', multiplier: 1 },
+        ],
     },
     {
         id: 'dal_makhani',
@@ -45,6 +54,12 @@ export const menuItems = [
         image: '/dal_makhani.png',
         description: 'Slow cooked black lentils with butter and cream.',
         isVeg: true,
+        portionType: 'portionSize',
+        portions: [
+            { label: 'Quarter', multiplier: 0.5 },
+            { label: 'Half', multiplier: 0.75 },
+            { label: 'Full', multiplier: 1 },
+        ],
     },
     {
         id: 'veg_biryani',
@@ -54,6 +69,11 @@ export const menuItems = [
         image: '/veg_biryani.png',
         description: 'Aromatic basmati rice with vegetables & spices.',
         isVeg: true,
+        portionType: 'riceSize',
+        portions: [
+            { label: 'Half', multiplier: 0.6 },
+            { label: 'Full', multiplier: 1 },
+        ],
     },
     {
         id: 'butter_naan',
@@ -63,6 +83,7 @@ export const menuItems = [
         image: '/butter_naan.png',
         description: 'Soft, buttery leavened flatbread from the tandoor.',
         isVeg: true,
+        portionType: 'count',
     },
     {
         id: 'tandoori_roti',
@@ -72,6 +93,7 @@ export const menuItems = [
         image: 'https://images.unsplash.com/photo-1565557623262-b51c2513a641?w=400&q=80',
         description: 'Classic whole wheat flatbread baked in clay oven.',
         isVeg: true,
+        portionType: 'count',
     },
     // ─── FAST FOOD ──────────────────────────────────────────────────────────────
     {
@@ -82,6 +104,7 @@ export const menuItems = [
         image: 'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=400&q=80',
         description: 'Crispy veggie patty with fresh lettuce and sauce.',
         isVeg: true,
+        portionType: null,
     },
     {
         id: 'cheese_burger',
@@ -91,6 +114,7 @@ export const menuItems = [
         image: 'https://images.unsplash.com/photo-1550547660-d9450f859349?w=400&q=80',
         description: 'Loaded with gooey melted cheese and crispy patty.',
         isVeg: true,
+        portionType: null,
     },
     {
         id: 'veg_pizza_medium',
@@ -100,6 +124,7 @@ export const menuItems = [
         image: 'https://images.unsplash.com/photo-1513104890138-7c749659a591?w=400&q=80',
         description: 'Loaded with fresh vegetables on a crispy base.',
         isVeg: true,
+        portionType: null,
     },
     {
         id: 'french_fries',
@@ -109,6 +134,7 @@ export const menuItems = [
         image: 'https://images.unsplash.com/photo-1576107232684-1279f390859f?w=400&q=80',
         description: 'Golden crispy fries seasoned with special spices.',
         isVeg: true,
+        portionType: null,
     },
     {
         id: 'white_sauce_pasta',
@@ -118,6 +144,7 @@ export const menuItems = [
         image: '/white_sauce_pasta.png',
         description: 'Creamy béchamel sauce with al dente pasta.',
         isVeg: true,
+        portionType: null,
     },
     // ─── BEVERAGES ──────────────────────────────────────────────────────────────
     {
@@ -128,6 +155,7 @@ export const menuItems = [
         image: 'https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&q=80',
         description: 'Chilled blended coffee with creamy foam.',
         isVeg: true,
+        portionType: null,
     },
     {
         id: 'fresh_lime_soda',
@@ -137,6 +165,7 @@ export const menuItems = [
         image: '/fresh_lime_soda.png',
         description: 'Refreshing lime soda, sweet or salted.',
         isVeg: true,
+        portionType: null,
     },
     {
         id: 'soft_drinks',
@@ -146,6 +175,7 @@ export const menuItems = [
         image: 'https://images.unsplash.com/photo-1543253687-c931c8e01820?w=400&q=80',
         description: 'Chilled carbonated soft beverages.',
         isVeg: true,
+        portionType: null,
     },
     {
         id: 'mineral_water',
@@ -155,6 +185,7 @@ export const menuItems = [
         image: 'https://images.unsplash.com/photo-1548839140-29a749e1cf4d?w=400&q=80',
         description: 'Pure sealed mineral water bottle.',
         isVeg: true,
+        portionType: null,
     },
 ];
 
